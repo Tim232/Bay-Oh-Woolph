@@ -22,7 +22,8 @@ initial_extensions = [
     'cogs.memberinfo',
     'cogs.utility',
     'cogs.mgmanager',
-    'cogs.games'
+    'cogs.games',
+    'cogs.test'
 ]
 
 MAIN = Config.MAIN
