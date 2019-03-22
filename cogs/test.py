@@ -52,17 +52,16 @@ class Test:
         self.bot = bot
 
     @commands.command()
-    async def Add(self,ctx):
+    async def Add(self,ctx,param1):
         """Adds game tags"""
 
-        message = ctx.message.content
+        message = param1
         member = ctx.message.author
         messagex = message.lower()
         messagey = messagex.replace(' ', '')
-        messagey[3:]
 
 
-        if messagey == any(Games):
+        if messagey in Games:
             await ctx.send('Test Complete' +messagey)
         else:
             await ctx.send('Error')
